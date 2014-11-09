@@ -1,0 +1,10 @@
+TRACEPOINT_EVENT(
+    test_lttng,
+    c_app_trace,
+    TP_ARGS(
+        char*, my_string_arg
+    ),
+    TP_FIELDS(
+        ctf_string(my_string_field, my_string_arg)
+    )
+)
